@@ -1,0 +1,83 @@
+version: '1.0'
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    restart: "no"
+
+  mariadb:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    restart: "no"
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    restart: "no"
+
+  # service-registry:
+  #   image: bdf5aa40fe86
+  #   ports:
+  #     - "8761:8761"
+  #   restart: "no"
+
+  # config-server:
+  #   image: 4075e0255fa3
+  #   environment:
+  #     EUREKA_SERVER_ADDRESS: http://host.docker.internal:8761/eureka
+  #   ports:
+  #     - "9296:9296"
+  #   restart: "no"
+  #   depends_on:
+  #     - service-registry
+
+  # api-gateway:
+  #   environment:
+  #     EUREKA_SERVER_ADDRESS: http://host.docker.internal:8761/eureka
+  #     CONFIG_SERVER_URL: host.docker.internal:9296
+  #   ports:
+  #     - "9090:9090"
+  #   restart: "no"
+  #   depends_on:
+  #     - config-server
+
+  # product-service:
+  #   image: abf8253207c5
+  #   environment:
+  #     DB_HOST: host.docker.internal
+  #     EUREKA_SERVER_ADDRESS: http://host.docker.internal:8761/eureka
+  #     CONFIG_SERVER_URL: host.docker.internal:9296
+  #   ports:
+  #     - "8080:8080"
+  #   restart: "no"
+  #   depends_on:
+  #     - config-server
+
+  # order-service:
+  #   image: 41d0cf363854
+  #   environment:
+  #     DB_HOST: host.docker.internal
+  #     EUREKA_SERVER_ADDRESS: http://host.docker.internal:8761/eureka
+  #     CONFIG_SERVER_URL: host.docker.internal:9296
+  #   ports:
+  #     - "8082:8082"
+  #   restart: "no"
+  #   depends_on:
+  #     - config-server
+
+  # payment-service:
+  #     image: 7147298a2e8d
+  #     environment:
+  #       DB_HOST: host.docker.internal
+  #       EUREKA_SERVER_ADDRESS: http://host.docker.internal:8761/eureka
+  #       CONFIG_SERVER_URL: host.docker.internal:9296
+  #     ports:
+  #       - "8081:8081"
+  #     restart: "no"
+  #     depends_on:
+  #       - config-server

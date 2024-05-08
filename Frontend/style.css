@@ -1,0 +1,92 @@
+.header {
+    width: 100%;
+    text-align: center; /* Centers the content horizontally */
+    padding: 10px 0; /* Add some padding at the top and bottom */
+    background-color: white; /* Optional: background color for the header */
+}
+
+.header img {
+    height: 100px; /* Adjust the height as needed */
+    /* Add additional styling as needed */
+}
+
+.floating-cart {
+    position: fixed; /* Keeps the icon fixed during scrolling */
+    bottom: 50px; /* Distance from the bottom of the viewport */
+    right: 60px; /* Distance from the right of the viewport */
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    cursor: pointer; /* Changes the cursor on hover */
+    z-index: 1000; /* Ensures the icon is above other elements */
+}
+
+.custom-alert {
+    position: fixed;
+    bottom: 160px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1001; /* Ensure it appears above other content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Optional: Add a hover effect */
+.floating-cart:hover {
+    opacity: 0.8;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.product {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    align-items: center; /* Align items vertically */
+}
+
+.product-image {
+    flex: 4; /* 4 parts of the flex container */
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 50%; /* Reduces the image size by 50% */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.product-details {
+    flex: 6; /* 6 parts of the flex container */
+    padding-left: 20px; /* Space between image and details */
+}
+
+@media (max-width: 600px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .product-details {
+        padding-left: 0;
+    }
+}
+
+input {
+    width: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
+}

@@ -1,0 +1,51 @@
+{
+    "name": "LG 55-Inch Class UQ7570",
+    "price" : 527.99,
+    "quantity": "100",
+    "productDescription": "CRYSTAL CLEAR PICTURE: 4K UHD, Active HDR (HDR10 Pro, HLG), Dynamic Tone Mapping. ULTIMATE STREAMING: Smart TV webOS 22 with access to apps like Netflix, YouTube, Apple TV+, Disney+, Prime Video, LG Channels and hundreds more.",
+    "productImageUrl": "https://m.media-amazon.com/images/I/91Yj1puZh7L._AC_SX679_.jpg"
+}
+
+{
+    "name": "Fitbit Charge 6 Tracker",
+    "price" : 159.95,
+    "quantity": "100",
+    "productDescription": "Know when your body's ready for a workout or needs recovery so you can dial your exercise up or down. Watching your heart rate during exercise lets you know when you're in fat burn, cardio or peak zones so you can adjust your effort to match your goals",
+    "productImageUrl": "https://m.media-amazon.com/images/I/61ZtqtvoD2L._AC_SX679_.jpg"
+}
+
+{
+    "name": "Philips 2200 Series Fully Automatic Espresso Machine",
+    "price" : 559.99,
+    "quantity": "100",
+    "productDescription": "With Philips 2200 Series easily make aromatic coffee varieties like Espresso, Coffee and Cappuccino at the touch of a button",
+    "productImageUrl": "https://m.media-amazon.com/images/I/719ti9LYGSL._AC_SX679_.jpg"
+}
+
+
+[
+    {
+        "productId": 1,
+        "productName": "LG 55-Inch Class UQ7570",
+        "price": 527,
+        "quantity": 100,
+        "productDescription": "CRYSTAL CLEAR PICTURE: 4K UHD, Active HDR (HDR10 Pro, HLG), Dynamic Tone Mapping. ULTIMATE STREAMING: Smart TV webOS 22 with access to apps like Netflix, YouTube, Apple TV+, Disney+, Prime Video, LG Channels and hundreds more.",
+        "productImageUrl": "https://m.media-amazon.com/images/I/91Yj1puZh7L._AC_SX679_.jpg"
+    },
+    {
+        "productId": 2,
+        "productName": "Fitbit Charge 6 Tracker",
+        "price": 159,
+        "quantity": 100,
+        "productDescription": "Know when your body's ready for a workout or needs recovery so you can dial your exercise up or down. Watching your heart rate during exercise lets you know when you're in fat burn, cardio or peak zones so you can adjust your effort to match your goals",
+        "productImageUrl": "https://m.media-amazon.com/images/I/61ZtqtvoD2L._AC_SX679_.jpg"
+    },
+    {
+        "productId": 3,
+        "productName": "Philips 2200 Series Fully Automatic Espresso Machine",
+        "price": 559,
+        "quantity": 100,
+        "productDescription": "With Philips 2200 Series easily make aromatic coffee varieties like Espresso, Coffee and Cappuccino at the touch of a button",
+        "productImageUrl": "https://m.media-amazon.com/images/I/719ti9LYGSL._AC_SX679_.jpg"
+    }
+]

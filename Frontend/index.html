@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Online Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.hktvmall.com/medias/sys_master/images/images/h86/h57/12110146404382.png" alt="Shop Logo">
+    </div>
+    <div id="app">
+        <div id="customAlert" class="custom-alert" style="display: none;">Order placed successfully!</div>
+        <div class="product" v-for="product in products" :key="product.productId">
+            <div class="product-image">
+                <img :src="product.productImageUrl" :alt="product.productName">
+            </div>
+            <div class="product-details">
+                <h2>{{ product.productName }}</h2>
+                <p>{{ product.productDescription }}</p>
+                <p>Price: ${{ product.price }}</p>
+                <div class="quantity-and-cart">
+                    <input type="number" min="1" value="1">
+                    <button type="button" @click="addToCart(product)">
+                        {{ product.isAddedToCart ? 'Added to Cart!' : 'Add to Cart' }}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="checkout-icon.png" alt="Cart" class="floating-cart" @click="placeOrder">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

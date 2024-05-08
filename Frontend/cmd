@@ -1,0 +1,11 @@
+     product_service: 'localhost:8080',
+        order_service: 'localhost:8082',
+
+
+app.$data.product_service = "3.86.238.60:8080";
+app.$data.order_service = "3.92.185.31:8082";
+
+app.fetchProducts()
+
+set alarm and notemail  
+fma 
